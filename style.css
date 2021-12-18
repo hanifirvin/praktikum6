@@ -1,0 +1,67 @@
+body {
+  background-image: url(img/bground.jpg);
+}
+
+.jumbotron,
+.navigationBar,
+.container {
+  color: black;
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px 10px;
+  background-color: rgba(245, 245, 245, 0.7);
+}
+
+.jumbotron img {
+  width: 80px;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationBar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navigationBar button {
+  padding: 0.5px;
+  margin: 4px;
+}
+
+.container {
+  display: grid;
+  grid-template: "transaksi pemesanan" 1fr/ 2fr 2fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.boxTransaksi {
+  grid-area: transaksi;
+  background-color: rgba(245, 245, 245, 0.7);
+  padding: 10px 80px;
+}
+
+.boxTagihan,
+.boxRincian {
+  grid-area: pemesanan;
+  background-color: rgba(245, 245, 245, 0.7);
+  padding: 10px auto;
+}
+
+table {
+  margin: 20px auto;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+
+p {
+  justify-content: space-around;
+}
